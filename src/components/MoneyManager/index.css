@@ -1,0 +1,227 @@
+/* Write your CSS here */
+.app-container{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.responsive-container{
+    width: 80%;
+    max-width: 550px;
+}
+
+@media screen and (min-width: 768px){
+    .responsive-container{
+        max-width: 1150px;
+    }
+}
+
+.header-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    height: 170px;
+    border-radius: 15px;
+    margin-top: 65px;
+}
+
+@media screen and (min-width: 768px) {
+    .header-container{
+        align-items: flex-start;
+        padding: 50px;
+    }
+}
+
+.heading {
+    color: #475569;
+    font-family: "Roboto";
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+    .heading {
+        font-size: 30px;
+    }
+}
+
+.header-content {
+    color: #475569;
+    font-family: "Roboto";
+    font-size: 15px;
+    margin: 0px;
+}
+
+@media screen and (min-width: 768px) {
+    .header-container {
+        font-size: 18px;
+    }
+}
+
+.money-manager-text {
+    color: #0b69ff;
+    font-weight: 500;
+}
+
+.transaction-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+@media screen and (min-width: 768px) {
+    .transaction-details {
+        flex-direction: row;
+    }
+}
+
+.transaction-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 425px;
+    width: 100%;
+    border: 1px soild #cbd5e1;
+    border-radius: 12px;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+    .transaction-form {
+        width: 40%;
+        padding-right: 42px;
+        padding-left: 48px;
+    }
+}
+
+.transaction-header {
+    color: #475569;
+    font-size: 15px;
+    font-family: "Roboto";
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+@media screen and (min-width: 768px) {
+    .transaction-header {
+        font-size: 20px;
+    }
+}
+
+.input-label {
+    color:#7e858e;
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.4;
+    margin-bottom: 0px;
+}
+
+.input {
+    color: #1e293b;
+    background-color: #ffffff;
+    font-family: "Roboto";
+    border: 1px solid #d7dfe9;
+    border-radius: 2px;
+    height: 40px;
+    width: 100%;
+    outline: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    min-width: 150px;
+}
+
+.button {
+    background-color: #0b69ff;
+    color: #ffffff;
+    font-family: "Roboto";
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    border-radius: 6px;
+    padding-top: 12px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 12px;
+    outline: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.history-transaction {
+    width: 100%;
+    min-height: 320px;
+    border: 1px solid #cbd5e1;
+    border-radius: 12px;
+    padding-top: 12px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 12px;
+    margin-top: 32px;
+}
+
+@media screen and (min-height: 768px) {
+    .history-transaction {
+        width: 50%;
+        min-height: 420px;
+        border: 1px solid #cbd5e1;
+        padding-top: 24px;
+        padding-left: 28px;
+        padding-right: 40px;
+        padding-bottom: 40px;
+        margin-top: 0px;
+        margin-left: 32px;
+    }
+}
+
+.transaction-table-container{
+    height: 100%;
+    border-radius: 8px;
+}
+
+.transaction-table{
+    padding-left: 0;
+    margin: 0px;
+}
+
+.table-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    list-style-type: none;
+    border: 1px solid #cbd5e1;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .table-header{
+        padding-left: 24px;
+        padding-right: 25px;
+    }
+}
+
+.table-header-cell {
+    color: #334155;
+    font-family: "Roboto";
+    font-size: 12px;
+    font-weight: 500;
+    width: 30%;
+    border-right: none;
+}
+
+@media screen and (min-width: 768px) {
+    .table-header-cell{
+        font-size: 15px;
+    }
+}
